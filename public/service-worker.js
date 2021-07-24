@@ -1,8 +1,10 @@
 const FILES_TO_CACHE = [
-  '/',
-  '/manifest.json',
+  '/index.html',
+  '/dist/manifest.json',
   '/assets/css/styles.css',
   '/dist/app.bundle.js',
+  '/dist/assets/icons/icon_192x192.png',
+  '/dist/assets/icons/icon_512x512.png',
   'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
   'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css',
 ];
