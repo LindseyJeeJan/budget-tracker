@@ -6,6 +6,11 @@ body {
 button, input {
   font-size: 100%;
   font-family: Arial;
+  white-space: nowrap;
+}
+
+.no-wrap{
+  white-space: nowrap;
 }
 
 table {
@@ -33,8 +38,11 @@ tr:nth-child(even) {
 }
 
 .total {
-  font-size: 150%;
-  text-decoration: underline;
+  font-size: 1.3rem;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .form {
@@ -43,9 +51,15 @@ tr:nth-child(even) {
 }
 
 .transactions {
+  font-size: .9rem;
   text-align: left;
   max-height: 300px;
   overflow: auto;
   width: 90%;
   margin: 0 auto;
+  cursor: default;
+}
+
+.transactions tr td:last-child::before{
+  content: '$';
 }
