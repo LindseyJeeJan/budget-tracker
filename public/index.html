@@ -24,7 +24,12 @@
         <input class="form-control" type="text" id="t-name" placeholder="Transaction name" />
       </div>
       <div class="col-xs-12 col-sm-6 col-md-3 mb-1">
-        <input class="form-control" type="number" min="0" id="t-amount" placeholder="Amount" />
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">$</span>
+          </div>
+          <input class="form-control" type="number" min="0" id="t-amount" placeholder="Amount" />
+        </div>
       </div>
       <div class="col-xs-12 col-md-3 no-wrap">
         <button class="btn btn-success" id="add-btn"><i class="fa fa-plus buttons"></i> Add</button>
@@ -52,6 +57,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
   <script src="dist/app.bundle.js"></script>
+  <script src="dist/db.bundle.js"></script>
   <script type="text/javascript">
     (function () {
       if ("serviceWorker" in navigator) {

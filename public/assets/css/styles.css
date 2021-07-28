@@ -28,7 +28,12 @@ tr:nth-child(even) {
 }
 
 .error {
-  color: red;
+    color: #c00;
+    width: 100%;
+    text-align: left;
+    margin: 1%;
+    padding: 1%;
+    border-radius: 3px;
 }
 
 .wrapper {
@@ -58,8 +63,4 @@ tr:nth-child(even) {
   width: 90%;
   margin: 0 auto;
   cursor: default;
-}
-
-.transactions tr td:last-child::before{
-  content: '$';
 }

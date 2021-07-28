@@ -5,6 +5,7 @@ const config = {
   mode: 'development',
   entry: {
     app: './public/assets/js/index.js',
+    db: './public/assets/js/indexedDb.js',
   },
   output: {
     path: __dirname + '/public/dist',

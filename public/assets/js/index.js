@@ -1,5 +1,6 @@
 let transactions = [];
 let myChart;
+import { saveRecord } from "./indexedDb";
 
 fetch("/api/transaction")
   .then(response => {
@@ -85,7 +86,7 @@ function sendTransaction(isAdding) {
 
   // validate form
   if (nameEl.value === "" || amountEl.value === "") {
-    errorEl.textContent = "Missing Information";
+    errorEl.textContent = "Error: Provide missing transaction information.";
     return;
   }
   else {
@@ -126,7 +127,7 @@ function sendTransaction(isAdding) {
   })
   .then(data => {
     if (data.errors) {
-      errorEl.textContent = "Missing Information";
+      errorEl.textContent = "Error: Provide missing transaction information.";
     }
     else {
       // clear form
