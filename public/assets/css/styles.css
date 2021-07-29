@@ -64,3 +64,12 @@ tr:nth-child(even) {
   margin: 0 auto;
   cursor: default;
 }
+
+button > i {
+  opacity: 0.6;
+  transition: 0.3s;
+} 
+
+button:hover > i {
+  opacity: 1;
+} 
