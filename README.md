@@ -20,13 +20,9 @@
   Once you have installed Node and NPM, run npm start and enter your transaction details in the browser. You may add or subtract from your running budget total. 
 
   ![Desktop](public/assets/images/desktop.png)
-<<<<<<< HEAD
 
   ![Mobile](public/assets/images/mobile.png)
 
-=======
-  ![Mobile](public/assets/images/mobile.png)
->>>>>>> b9ac33b6a2072c9f2798e4807f3c2e5ce036ffa0
 
   ## License
   Licensed under [MIT License](https://spdx.org/licenses/MIT.html).
